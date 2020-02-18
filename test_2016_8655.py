@@ -3,8 +3,8 @@ import os
 
 target = "./CVE-2016-8655"
 
-thread1 = 0x4008DD	#CPU_index is 0
-thread2 = 0x400912	#CPU_index is 1
+thread1 = 0x40092D	#CPU_index is 0
+thread2 = 0x400962	#CPU_index is 1
 
 # hw_bp_addr sched __start_routine
 hw_bps_list = [[0xFFFFFFFF82956167, 1, thread2], [0xFFFFFFFF82952FAF, 2, thread1],]
