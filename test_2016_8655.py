@@ -1,13 +1,13 @@
 import os
 
 
-target = "./test3"
+target = "./CVE-2016-8655"
 
-thread1 = 0x12345786	#CPU_index is 0
-thread2 = 0x12345806	#CPU_index is 1
+thread1 = 0x4008DD	#CPU_index is 0
+thread2 = 0x400912	#CPU_index is 1
 
 # hw_bp_addr sched __start_routine
-hw_bps_list = [[0x123457bd, 1, thread1], [0x12345834, 2, thread2], [0x12345834, 3, thread2], [0x123457e0, 4, thread1], [0x12345834, 5, thread2]]
+hw_bps_list = [[0xFFFFFFFF82952FAF, 1, thread1], [0xFFFFFFFF82956167, 2, thread2],]
 
 
 
